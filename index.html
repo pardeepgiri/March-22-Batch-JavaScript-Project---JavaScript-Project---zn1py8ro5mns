@@ -1,30 +1,47 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tip.css">
+    <title>TIP-CALCULATOR</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="header">
-            TAXI FARE CALCULATOR
-        </div>
-        <div>
-            <div>
-                <p>Total Distasnce</p>
-                KM<input type="number" id="billamt"placeholder="Distasnce in Km..">
+  <div id="tp">
+    <h1>TIP-CALCULATOR</h1>
+  </div>
+    <div class="main">
+      SPLE <br>
+      TTER
+     <div id="maincontaner">
+         <div class="flex-container" id="reset">
+             <div class="flex-item-left">
+                Bill<br>
+              <input class="inputf" placeholder="bill amount" id="billamount"><br><br>
+              <button class="btn" onclick="tipfive()"> 5%</button> 
+              <button class="btn"  onclick="tipten()" >10%</button>
+               <button class="btn" onclick="tipfiften()">15%</button><br>
+              <button class="btn" onclick="tiptwenty()">20%</button>
+               <button class="btn" onclick="tiptwentyfive()">25%</button> 
+               <input type="number" placeholder="Custom"  id="persesnt" oninput="customtip(event)" class="inpbut"><br><br>
+               No of people<br>
+              <input type="number" placeholder="0"  class="inputf" id="noofpepople">
               
-                <p>Total number of persons</p>
-                <input type="number" id="peopleamt"  placeholder="Number of people "><br>
-                <button id="calculate">Calculate</button>
-            </div>
-            <p>Total Amount</p>
-                ₹ <span id="total">0.00</span>
-                <span id="each" style="display: none;">each</span>
-            </div>
-        </div>
+             </div>
+              <div class="flex-item-right">
+             <h3>Tip ammount:    <span id="tipamount">$ 0. 00</span></h3>
+               <p class="ptag">/person</p>
+              <h3>Total amount:     <span id="totalamount">$ 0.00</span></h3>
+              <p class="ptag">/person</p><br>
+              <button class="resetbtn" onclick="resetvalue()">RESET</button>
+              <!-- <input type="button" value="Reset" onclick="clearResult()"> -->
+              
+              </div>
+         </div>
+      </div>
     </div>
+    
     <script src="App.js"></script>
 </body>
 </html>
