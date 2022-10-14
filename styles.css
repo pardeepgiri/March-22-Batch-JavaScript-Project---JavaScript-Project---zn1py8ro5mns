@@ -1,55 +1,132 @@
+body{
+  background-color: aliceblue;
+}
 
-body {
-    background-color: grey;
-    text-align: center;
+#tp{
+  text-align: center;
 }
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-.container {
 
-    width: 80%;
-    height: 515px;
-    border-radius: 25px;
-    background-color: honeydew;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.header
-{
-    font-family: 'Annie Use Your Telescope';
-    background-color: black;
-    color: rgb(241, 173, 173);
-    font-size: 25px;
+.main{
+    background-color:#d2f4f7;
     text-align: center;
-    height: 50px; 
-     width: 300px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding-top: 15px;
+    width: 50%;
+    min-width: 680px;
+    height: 450px;
+    font-family: sans-serif;
+    /* border: 50px dotted green; */
+    margin-left: 22%;
+    /* border-radius: 50px; */
+    margin-top: 50px;
 }
-button {
-margin: 20px auto;
-width: 150px;
-height: 50px;
-background-color: black;
-color: rgb(156, 111, 111);
-font-size: 20px;
-border: none;
-border-radius: 5px;
-}
-button:hover{
-   color: rgb(178, 241, 67);
-}
-input {
-width: 85%;
-border: none;
-border-bottom: 1px solid green;
-padding: 10px;
-border-radius: 8px;
-}
+
+  h4{
+    text-align: center;
+  }
+  h3{
+    text-align: left;
+  }
+  span{
+    text-align: right;
+    font-size: 30px;
+  }
+  #maincontaner{
+    border-radius: 50px;
+    /* border: 5 px dotted green; */
+  }
+  
+  .flex-container {
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+    height: 300px;
+    background-color: white;
+    border-radius: 30px;
+    /* border: 5px dotted green; */
+  
+  }
+  
+  .flex-item-left {
+   background-color: white;
+   width: 250px;
+   padding-top: 10px;
+   text-align: left;
+   padding-left: 35px;
+   padding-right: 20px;
+   border-end-start-radius: 30px;
+   border-start-start-radius: 30px;
+  }
+  
+  .flex-item-right {
+    width: 280px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color:#034538;
+    color: white;
+    text-align: left;
+  }
+    .btn{
+    background-color: #034538;
+    color: white;
+    border-radius: 3px;
+    width: 79px;
+    height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+  }
+  .bill{
+   text-align:left
+  }
+  .button{
+    background-color: #034538;
+    color: antiquewhite;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px black;
+  }
+
+  .inputf{
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  .inpbut{
+    color: #034538;
+    font-weight: 500;
+    border-radius: 3px;
+    width: 70px;
+    height: 25px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+  }
+
+    .ptag{
+      font-size: 10px;
+      padding-top: -20pxpx;
+    }
+
+    .resetbtn{
+      font-size: 25px;
+      font-weight: 600;
+      text-align: center;
+      background-color: black;
+      color: bisque;
+      width: 220px;
+      margin-left: 25px;
+      height: 40px;
+      border-radius: 10px;
+      font-family: monospace;
+      /* box-shadow: 1px 1px ; */
+      border: 2px solid black;
+    }
